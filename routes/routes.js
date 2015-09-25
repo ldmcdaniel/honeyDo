@@ -10,7 +10,7 @@ module.exports = function (app) {
     });
 
     app.post('/api/todos', function(req, res) {
-      User.create({
+       User.create({
         todo: req.body.todo
       }, function(err, todo) {
           if (err) throw err
